@@ -132,7 +132,6 @@ function onGameTimer () {
   function onShowingResult () {
   clearInterval(timeLeftId);
   clearTimeout(timeLeftId);
-  clickAble = false;
   headLine.classList.add(HIDDEN_CLASS);
   container.classList.add(HIDDEN_CLASS);
   gameResetButton.classList.remove(HIDDEN_CLASS);
