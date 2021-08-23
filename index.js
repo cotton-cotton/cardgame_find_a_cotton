@@ -101,14 +101,12 @@ function onGameTimer () {
   if (arrNum === maxCount) {
   if (clickCount[0] === clickCount[1]) {
   clickAudio.play();
-  clickAble = false;
   answerList.push(clickCount[0]);
   answerList.push(clickCount[1]);
   gameScore += 1;
   gameScoreBoard.textContent = gameScore;
   answerList = [];
   } else if (clickCount[0] !== clickCount[1]) {
-  clickAble = false;
   answerList.push(clickCount[0]);
   answerList.push(clickCount[1]);
   answerList = [];
