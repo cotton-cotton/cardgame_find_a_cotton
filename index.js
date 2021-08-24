@@ -69,13 +69,28 @@ card.forEach((aCard) => {
 
 function onGameTimer () {
   let time = 40;
-  timeLeftId = setTimeout(() => setInterval(() => {
-  gameTimer.textContent = `${time--}초 남았습니다!`
-  if (time === 0) {
-  loserMessage.classList.remove(HIDDEN_CLASS);
-  onShowingResult();
+  gameTimer.classList.add(HIDDEN_CLASS);
+let timeLeftId = setTimeout(() => {
+  let interval = setInterval(() => {
+    gameTimer.classList.remove(HIDDEN_CLASS);
+    gameTimer.textContent = `${time --}초 남았습니다!`;
+    if(time === 0){
+      isWin = false;
+      clearInterval(interval);
+      loserMessage.classList.remove(HIDDEN_CLASS);
+      onShowingResult ();
     }
-  }, 1000),3000);
+
+  function handleClickWinner () {
+    if (gameScore === maxScore) {
+      clearInterval(interval);
+    isWin = true;
+    winnerMessage.classList.remove(HIDDEN_CLASS);
+    onShowingResult ();
+  }}
+  handleClickWinner(); }, 1000);
+}, 3000);
+
 }
 
   let cardList = [];
@@ -86,7 +101,6 @@ function onGameTimer () {
   let gameScore = 0;
   const maxCount = 2;
   const maxScore = 10;
-  let isWin = false;
   let clickAble = true;
 
   cardFront.forEach((aCard) => {
@@ -115,21 +129,12 @@ function onGameTimer () {
   cardList[1].classList.remove(CARD_FLIPPED);
 },500);
  }
-  arrNum = 0; 
+  arrNum = 0;
   answerNum = 0;
-} handleClickWinner();
+} 
 }});
 
-  function handleClickWinner () {
-  if (gameScore === maxScore) {
-  isWin = true;
-  winnerMessage.classList.remove(HIDDEN_CLASS);
-  onShowingResult ();
-}}
-
   function onShowingResult () {
-  clearInterval(timeLeftId);
-  clearTimeout(timeLeftId);
   headLine.classList.add(HIDDEN_CLASS);
   container.classList.add(HIDDEN_CLASS);
   gameResetButton.classList.remove(HIDDEN_CLASS);
