@@ -4,7 +4,6 @@ body{
   font-family: 'Cute Font', cursive;
   background-image: url('img/paws.JPG');
 }
-
 .headline{
   display: flex;
   justify-content: center;
@@ -56,10 +55,11 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
 }
 .card {
-  width: 120px;
-  height: 170px;
+  width: 110px;
+  height: 160px;
   border: 2px solid black;
   perspective: 180px;
 }
@@ -171,7 +171,7 @@ margin-top: 30px;
 	font-size: 32px;
 	top: 0;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 650px) {
 	#no-mobile {
 		display: none;
 	}
