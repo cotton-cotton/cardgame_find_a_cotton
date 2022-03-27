@@ -9,25 +9,32 @@
 ## 🖥 구현 영상
 
 ***게임 시작***
+
 ![게임시작](https://user-images.githubusercontent.com/63281199/160279421-06ee5c27-1e18-410f-a0c2-0f38ce70c994.gif)
 
 <br>
 
 
 ***게임 진행***
+
 ![게임 진행](https://user-images.githubusercontent.com/63281199/160279414-6c7768e3-f126-4008-b747-9ae8267d4e9b.gif)
 
 <br>
 
 
-***게임 오버***
-![게임오버](https://user-images.githubusercontent.com/63281199/160279423-5544436f-1f04-49bf-925d-f645d93ab37f.gif)
+***게임 성공***
+
+![게임성공](https://user-images.githubusercontent.com/63281199/160279416-dfd88100-a682-45f1-bbb7-9587fdaa5b15.gif)
 
 <br>
 
 
-***게임 성공***
-![게임성공](https://user-images.githubusercontent.com/63281199/160279416-dfd88100-a682-45f1-bbb7-9587fdaa5b15.gif)
+***게임 오버***
+
+![게임오버](https://user-images.githubusercontent.com/63281199/160279423-5544436f-1f04-49bf-925d-f645d93ab37f.gif)
+
+<br>
+
 
 ## 🥑 과제 개요
 
